@@ -32,21 +32,23 @@ var confetti = (function(options){
 	}
 	
 	confetti_piece.prototype.render = function() {
+		var csstext = "";
 		this.y += this.yspeed;
 		this.x += this.xspeed * this.xdirection;
 		this.rotation += this.rotspeed * this.rotdirection;
 		if(Math.random() > .95) { this.xdirection *= -1; }
 		if(Math.random() > .95) { this.rotdirection *= -1; }
-		this.element.style.cssText = "position:absolute;";
-		this.element.style.cssText += "top:"+this.y+"px;"; 
-		this.element.style.cssText += "left:"+this.x+"px;";
-		this.element.style.cssText += "height:"+this.height+"px;";
-		this.element.style.cssText += "width:"+this.width+"px;";
-		this.element.style.cssText += "background-color:"+this.color+";";
-		this.element.style.cssText += "-moz-transform:rotate("+this.rotation+"deg);";
-		this.element.style.cssText += "-webkit-transform:rotate("+this.rotation+"deg);";
-		this.element.style.cssText += "-o-transform:rotate("+this.rotation+"deg);";
-		this.element.style.cssText += "filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);";
+		csstext = "position:absolute;";
+		csstext += "top:"+this.y+"px;"; 
+		csstext += "left:"+this.x+"px;";
+		csstext += "height:"+this.height+"px;";
+		csstext += "width:"+this.width+"px;";
+		csstext += "background-color:"+this.color+";";
+		csstext += "-moz-transform:rotate("+this.rotation+"deg);";
+		csstext += "-webkit-transform:rotate("+this.rotation+"deg);";
+		csstext += "-o-transform:rotate("+this.rotation+"deg);";
+		csstext += "filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);";
+		this.element.style.cssText = csstext;
 	}
 	
 	var elements = [];
@@ -69,7 +71,7 @@ var confetti = (function(options){
 			try{
 				confetti_container.removeChild(elements[deletion_index[i]].element);
 			} catch (e){}
-			elements.slice(deletion_index[i],1);
+			elements.splice(deletion_index[i],1);
 		}
 	}
 	
