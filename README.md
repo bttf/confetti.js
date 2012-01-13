@@ -13,9 +13,9 @@ Settings
 --
 The following settings can be passed into the confetti function to change behavior
 
-	height:	number	// height of the area you want your confetti in
-	width:	number	// widht of the area you want your confetti in
-	colors:	array	// array of valid CSS colors for the confetti pieces to be [chosen at random from the list].
+	height:		number	// height of the area you want your confetti in
+	width:		number	// widht of the area you want your confetti in
+	colors:		array	// array of valid CSS colors for the confetti pieces to be [chosen at random from the list].
 	maxSize:	number	// maximum height and width of the confetti
 	fallSpeed:	number	// average number of pixels to fall per 50 milliseconds
 
