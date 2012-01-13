@@ -1,5 +1,9 @@
 This is a javascript library to place falling multi-colored confetti onto your webpage.
 
+Demo
+--
+http://nickgartmann.github.com/confetti.js/demo.html
+
 Usage
 --
 	<script src="confetti.js" type="text/javascript"></script>
