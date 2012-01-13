@@ -34,3 +34,9 @@ Additional Functions
 	});
 	cf.start()	// Begins generation of confetti pieces
 	cf.stop()	// Stops generation of confetti pieces and removes current pieces from the DOM
+
+TODO
+--
+* Optional css class configuration
+* Optional gradients
+* Test performance boost of recycling elements
