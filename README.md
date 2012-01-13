@@ -6,16 +6,16 @@ http://nickgartmann.github.com/confetti.js/demo.html
 
 Usage
 --
-	```javascript
-	<script src="confetti.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		window.addEventListener("load", function(){
-			confetti({
-				//optional configuration
-			}).start();
-		});
-	</script>
-	```
+```javascript
+<script src="confetti.js" type="text/javascript"></script>
+<script type="text/javascript">
+	window.addEventListener("load", function(){
+		confetti({
+			//optional configuration
+		}).start();
+	});
+</script>
+```
 
 Settings
 --
