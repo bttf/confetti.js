@@ -6,12 +6,13 @@ var confetti = (function(options){
 		maxSize : 20,
 		fallSpeed : 2
 	};
+
 	if(options) {
 		for(var key in options) {
 			defaults[key] = options[key];
 		}
 	}
-	
+
 	var confetti_container = document.createElement("div");
 	confetti_container.style.cssText = "height:0; width:0; overflow:visible; top:0; left:0;position:absolute;";
 	
